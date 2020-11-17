@@ -22,7 +22,7 @@ def Terms_and_Conditions():
     '''
     #*******************************************
     # CHANGE HERE: if you have read and agree with the term above, change "False" to "True".
-    Read_and_Agree = False
+    Read_and_Agree = True
     #*******************************************
     return Read_and_Agree
 
@@ -46,7 +46,7 @@ def Terms_and_Conditions():
 def transpose(X):
     #########################################
     ## INSERT YOUR CODE HERE (3 points)
-    
+    Xt = X.transpose()
     #########################################
     return Xt
     #-----------------
@@ -78,7 +78,7 @@ def transpose(X):
 def identity_matrix(n):
     #########################################
     ## INSERT YOUR CODE HERE (3 points)
-    
+    I = np.diag(np.ones(n))
     #########################################
     return I
     #-----------------
@@ -123,7 +123,7 @@ def identity_matrix(n):
 def matrix_multiplication(X, Y):
     #########################################
     ## INSERT YOUR CODE HERE (6 points)
-    
+    Z = np.dot(X, Y)
     #########################################
     return Z
     #-----------------
@@ -170,7 +170,7 @@ def matrix_multiplication(X, Y):
 def matrix_inverse(X):
     #########################################
     ## INSERT YOUR CODE HERE (6 points)
-    
+    Xi = np.linalg.inv(X)
     #########################################
     return Xi
     #-----------------
@@ -178,8 +178,8 @@ def matrix_inverse(X):
         TEST: Now you can test the correctness of your code above by typing the following in the terminal:
         ---------------------------------------------------
         python3 -m nose -v test1.py:test_matrix_inverse
-	OR 
-        nosetests -v test1.py:test_matrix_inverse
+	OR nosetests -v test1.py:test_matrix_inverse
+        
         ---------------------------------------------------
     '''
     

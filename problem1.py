@@ -204,7 +204,9 @@ def matrix_inverse(X):
 def is_missing(x):
     #########################################
     ## INSERT YOUR CODE HERE (3 points)
-    
+    print(x)
+    m = np.where(np.isnan(x), True, False)
+    print(m)
     #########################################
     return m
     #-----------------
@@ -236,7 +238,7 @@ def is_missing(x):
 def inverse(m):
     #########################################
     ## INSERT YOUR CODE HERE (3 points)
-    
+    m_ = np.where(m == False, True, False)
     #########################################
     return m_
     #-----------------
@@ -272,7 +274,7 @@ def inverse(m):
 def subset_vector(x, m):
     #########################################
     ## INSERT YOUR CODE HERE (3 points)
-    
+    x_m = x[m]
     #########################################
     return x_m
     #-----------------
@@ -311,7 +313,7 @@ def subset_vector(x, m):
 def subset_matrix(X, m):
     #########################################
     ## INSERT YOUR CODE HERE (3 points)
-    
+    X_m = X[m]
     #########################################
     return X_m
     #-----------------
